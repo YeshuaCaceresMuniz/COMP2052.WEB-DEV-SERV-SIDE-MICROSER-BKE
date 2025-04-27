@@ -1,0 +1,14 @@
+<!-- Página que muestra una lista de usuarios -->
+
+{% extends 'base.html' %}
+
+{% block title %}Usuarios{% endblock %}
+
+{% block content %}
+    <h2>Lista de Usuarios</h2>
+    <ul>
+        {% for usuario in usuarios %}
+            <li>{{ usuario }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

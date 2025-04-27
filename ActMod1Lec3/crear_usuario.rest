@@ -1,0 +1,8 @@
+# Crea un nuevo usuario enviando nombre y correo en formato JSON
+POST http://localhost:5000/crear_usuario
+Content-Type: application/json
+
+{
+  "nombre": "Yeshua Caceres",
+  "correo": "yeshua.caceres@gmail.com"
+}

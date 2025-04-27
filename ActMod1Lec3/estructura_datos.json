@@ -1,0 +1,31 @@
+{
+    "usuarios": [
+      {
+        "id": 1,
+        "nombre": "Yeshua",
+        "correo": "yeshua.caceres@gmailcom",
+        "rol": "admin"
+      },
+      {
+        "id": 2,
+        "nombre": "Maria",
+        "correo": "jose@gmail.com.com",
+        "rol": "editor"
+      }
+    ],
+    "productos": [
+      {
+        "id": 101,
+        "nombre": "Laptop DELL",
+        "precio": 1200.00,
+        "disponible": true
+      },
+      {
+        "id": 102,
+        "nombre": "Mouse Inalámbrico",
+        "precio": 25.99,
+        "disponible": false
+      }
+    ]
+  }
+  

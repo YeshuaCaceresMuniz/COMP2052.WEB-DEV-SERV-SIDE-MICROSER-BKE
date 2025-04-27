@@ -1,0 +1,2 @@
+# Obtiene la lista completa de usuarios registrados
+GET http://localhost:5000/usuarios

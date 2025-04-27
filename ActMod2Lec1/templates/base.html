@@ -1,0 +1,29 @@
+<!-- Plantilla base para toda la aplicación, estructura común -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mi App{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Mi Aplicación Flask</h1>
+        <nav>
+            <a href="/">Inicio</a> |
+            <a href="/users">Usuarios</a> |
+            <a href="/products">Productos</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
