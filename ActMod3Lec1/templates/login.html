@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- Título principal del formulario de login -->
+    <h1>Iniciar sesión</h1>
+
+    <!-- Bloque condicional para mostrar mensajes de error -->
+    <!-- Si existe la variable 'error', se muestra en color rojo -->
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+
+    <!-- Formulario de login con método POST -->
+    <form method="POST">
+        <!-- Campo de entrada para el nombre de usuario -->
+        Usuario: <input type="text" name="username" required><br><br>
+        
+        <!-- Campo de entrada para la contraseña (oculta) -->
+        Contraseña: <input type="password" name="password" required><br><br>
+        
+        <!-- Botón para enviar el formulario -->
+        <button type="submit">Entrar</button>
+    </form>
+</body>
+
+</html>

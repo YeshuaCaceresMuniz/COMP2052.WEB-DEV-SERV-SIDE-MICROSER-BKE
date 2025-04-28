@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>User Dashboard</title>
+</head>
+
+<body>
+    <!-- Encabezado principal de la página -->
+    <h1>Panel de usuario</h1>
+    
+    <!-- Párrafo que muestra mensaje de bienvenida personalizado con el nombre de usuario -->
+    <!-- La sintaxis {{ username }} es de Jinja2 y será reemplazada por el valor real -->
+    <p>Bienvenido, {{ username }}.</p>
+    
+    <!-- Enlace para cerrar sesión -->
+    <!-- url_for('logout') genera dinámicamente la URL para la ruta de logout -->
+    <a href="{{ url_for('logout') }}">Cerrar sesión</a>
+</body>
+
+</html>

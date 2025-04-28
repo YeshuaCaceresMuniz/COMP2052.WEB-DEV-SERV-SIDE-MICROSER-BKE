@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración de codificación de caracteres (UTF-8 para soporte multilenguaje) -->
+    <meta charset="UTF-8">
+    
+    <!-- Título de la página que se muestra en la pestaña del navegador -->
+    <title>Inicio</title>
+</head>
+
+<!-- Cuerpo del documento (contenido visible de la página) -->
+<body>
+    <!-- Título principal de la página de inicio -->
+    <h1>Bienvenido a la aplicación</h1>
+    
+    <!-- Enlace de navegación a la página de login -->
+    <!-- La función url_for() de Flask genera dinámicamente la URL para la ruta 'login' -->
+    <a href="{{ url_for('login') }}">Iniciar Sesión</a>
+</body>
+
+</html>

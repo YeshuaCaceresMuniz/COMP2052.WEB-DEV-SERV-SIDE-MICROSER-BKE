@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Título de la página para el panel de administrador -->
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <!-- Título principal del panel de administración -->
+    <h1>Panel de administrador</h1>
+    
+    <!-- Mensaje de bienvenida personalizado con el nombre de usuario -->
+    <!-- La variable 'username' es proporcionada por Flask/Jinja2 -->
+    <p>Bienvenido, {{ username }}.</p>
+    
+    <!-- Enlace para cerrar sesión -->
+    <!-- url_for() genera dinámicamente la URL para la ruta de logout -->
+    <a href="{{ url_for('logout') }}">Cerrar sesión</a>
+</body>
+</html>
