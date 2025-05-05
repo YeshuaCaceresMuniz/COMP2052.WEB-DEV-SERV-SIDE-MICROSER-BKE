@@ -1,0 +1,31 @@
+### Prueba 1: Iniciar sesión como ADMIN
+POST http://localhost:5000/login
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=1234
+
+### Prueba 2: Acceder al panel de admin (requiere rol 'admin')
+GET http://localhost:5000/admin
+Cookie:  
+
+### Prueba 3: Acceder al panel de editor (no debe tener acceso)
+GET http://localhost:5000/editor
+Cookie:  
+
+### Prueba 4: Cerrar sesión
+GET http://localhost:5000/logout
+Cookie:  
+
+### Prueba 5: Iniciar sesión como EDITOR
+POST http://localhost:5000/login
+Content-Type: application/x-www-form-urlencoded
+
+username=editor&password=1234
+
+### Prueba 6: Acceder al panel de editor (requiere rol 'editor')
+GET http://localhost:5000/editor
+Cookie:  
+
+### Prueba 7: Acceder al panel de admin (no debe tener acceso)
+GET http://localhost:5000/admin
+Cookie:  
