@@ -8,7 +8,7 @@ username=admin&password=1234
 GET http://localhost:5000/admin
 Cookie:  
 
-### Prueba 3: Acceder al panel de editor (no debe tener acceso)
+### Prueba 3: Acceder al panel de editor (no debe tener acceso).
 GET http://localhost:5000/editor
 Cookie:  
 
