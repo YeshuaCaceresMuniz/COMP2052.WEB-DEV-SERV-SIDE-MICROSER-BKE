@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+<div class="text-center">
+  <h1 class="mt-5">Bienvenido a la Plataforma de Publicación de Artículos</h1>
+  {% if current_user.is_authenticated %}
+    <p class="lead text-muted">Haz clic en <strong>Panel</strong> para ver o gestionar artículos.</p>
+  {% else %}
+    <p class="lead text-body-secondary">Por favor inicia sesión o regístrate para continuar.</p>
+  {% endif %}
+</div>
+{% endblock %}

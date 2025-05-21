@@ -1,0 +1,9 @@
+PUT http://localhost:5000/articulos/6
+Content-Type: application/json
+
+{
+  "titulo": "Actualizado",
+  "contenido": "Contenido actualizado",
+  "categoria": "Educación",
+  "estado": "Borrador"
+}

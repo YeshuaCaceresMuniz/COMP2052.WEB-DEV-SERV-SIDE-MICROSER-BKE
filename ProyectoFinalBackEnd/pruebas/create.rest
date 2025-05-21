@@ -1,0 +1,11 @@
+POST http://localhost:5000/articulos
+Content-Type: application/json
+
+{
+  "titulo": "Artículo de Prueba",
+  "contenido": "Contenido de ejemplo para test.",
+  "categoria": "Tecnología",
+  "fecha_publicacion": "2025-05-20",
+  "estado": "Publicado",
+  "autor_id": 1
+}
